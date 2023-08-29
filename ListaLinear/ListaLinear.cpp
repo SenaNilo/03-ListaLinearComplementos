@@ -124,7 +124,7 @@ void inserirElemento()
 void excluirElemento()
 {
 	int valor, index, i, penultimoEle;
-	cout << "Digite um numero para pesquisar: ";
+	cout << "Digite um numero para excluir: ";
 	cin >> valor;
 	index = posicaoElemento(valor);
 
