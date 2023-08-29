@@ -1,3 +1,4 @@
+//Danilo de Sena Santos
 
 #include <iostream>
 using namespace std;
@@ -122,7 +123,22 @@ void inserirElemento()
 
 void excluirElemento()
 {
+	int valor, index, i, penultimoEle;
+	cout << "Digite um numero para pesquisar: ";
+	cin >> valor;
+	index = posicaoElemento(valor);
 
+	if (index == -1) {
+		cout << "Esse numero nao existe!" << endl;
+	}
+	else {
+		penultimoEle = nElementos - 1;
+		for (i = index; i < nElementos; i++) {
+			lista[i] = lista[i + 1];
+		}
+		nElementos--;
+		cout << "Elemento excluído com sucesso!" << endl;
+	}
 
 }
 
